@@ -1,6 +1,7 @@
 #!/bin/bash
 
 mkdir tmp
-cp -r build/libs/* tmp
-java -jar tmp/hugb_hello_world.jar
+gradle installDist
+cp -r build/install/hugb_hello_world/* tmp
+./tmp/bin/hugb_hello_world
 rm -r tmp
