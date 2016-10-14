@@ -1,0 +1,6 @@
+#!/bin/bash
+
+mkdir tmp
+cp -r build/libs/* tmp
+java -jar tmp/hugb_hello_world.jar
+rm -r tmp
